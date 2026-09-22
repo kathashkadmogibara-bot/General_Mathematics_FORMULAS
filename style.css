@@ -1,0 +1,337 @@
+/* =========================
+   BODY
+========================= */
+
+body {
+    background-color: rgb(51, 51, 51);
+    color: white;
+    font-family: Arial, sans-serif;
+
+    margin: 0;
+    padding: 20px;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+    text-align: center;
+
+    padding: 25px;
+    margin-bottom: 45px;
+}
+
+header h1 {
+    font-size: 42px;
+    margin: 0;
+}
+
+header p {
+    font-size: 18px;
+    margin-top: 8px;
+}
+
+
+/* =========================
+   MAIN
+========================= */
+
+main {
+    max-width: 700px;
+    margin: auto;
+
+    text-align: center;
+}
+
+main h2 {
+    font-size: 28px;
+
+    margin-bottom: 40px;
+}
+
+
+/* =========================
+   SUBJECT MENU
+========================= */
+
+.subject-menu {
+    display: flex;
+    flex-direction: column;
+
+    gap: 16px;
+
+    width: 100%;
+}
+
+
+/* =========================
+   SUBJECT LINKS
+========================= */
+
+.subject-menu a {
+    display: block;
+
+    width: 100%;
+
+    text-decoration: none;
+}
+
+
+/* =========================
+   SUBJECT BUTTONS
+========================= */
+
+.subject-menu button {
+    display: block;
+
+    width: 100%;
+
+    background-color: rgb(70, 70, 70);
+
+    color: white;
+
+    border: 1px solid rgb(120, 120, 120);
+
+    border-radius: 10px;
+
+    padding: 16px 20px;
+
+    margin: 0;
+
+    font-size: 18px;
+
+    cursor: pointer;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================
+   BUTTON HOVER
+========================= */
+
+.subject-menu button:hover {
+    background-color: rgb(90, 90, 90);
+}
+
+
+/* =========================
+   GENERAL BUTTON
+========================= */
+
+button {
+    background-color: rgb(70, 70, 70);
+
+    color: white;
+
+    border: 1px solid rgb(120, 120, 120);
+
+    border-radius: 10px;
+
+    padding: 14px 25px;
+
+    font-size: 17px;
+
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(90, 90, 90);
+}
+
+
+/* =========================
+   INPUTS
+========================= */
+
+input {
+    background-color: rgb(40, 40, 40);
+
+    color: white;
+
+    border: 1px solid rgb(120, 120, 120);
+
+    border-radius: 8px;
+
+    padding: 12px;
+
+    margin: 8px;
+
+    font-size: 16px;
+}
+
+
+/* =========================
+   LABELS
+========================= */
+
+label {
+    display: block;
+
+    margin-top: 12px;
+    margin-bottom: 5px;
+}
+
+
+/* =========================
+   FORMULA SYSTEM
+========================= */
+
+#topicList {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+
+    width: 100%;
+}
+
+
+/* =========================
+   TOPIC BUTTONS
+========================= */
+
+.topic-button {
+    display: block;
+
+    width: 100%;
+
+    text-align: left;
+}
+
+
+/* =========================
+   FORMULA BUTTONS
+========================= */
+
+.formula-button {
+    display: block;
+
+    width: 100%;
+
+    text-align: left;
+}
+
+
+/* =========================
+   FORMULA ANSWER
+========================= */
+
+.formula-answer {
+    background-color: rgb(40, 40, 40);
+
+    border: 1px solid rgb(100, 100, 100);
+
+    border-radius: 10px;
+
+    padding: 20px;
+
+    margin-top: 15px;
+
+    min-height: 50px;
+
+    text-align: left;
+
+    white-space: pre-wrap;
+
+    overflow-x: auto;
+
+    line-height: 1.7;
+
+    font-size: 16px;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================
+   ANSWER / HISTORY
+========================= */
+
+section {
+    margin-top: 25px;
+}
+
+#answer,
+#history {
+    background-color: rgb(40, 40, 40);
+
+    border: 1px solid rgb(100, 100, 100);
+
+    border-radius: 10px;
+
+    padding: 15px;
+
+    margin-top: 10px;
+
+    min-height: 25px;
+}
+
+
+/* =========================
+   LINKS
+========================= */
+
+a {
+    text-decoration: none;
+
+    color: inherit;
+}
+
+
+/* =========================
+   ERROR
+========================= */
+
+#errorMessage {
+    color: red;
+
+    margin: 10px 0;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 12px;
+    }
+
+    header {
+        margin-bottom: 35px;
+    }
+
+    header h1 {
+        font-size: 34px;
+    }
+
+    header p {
+        font-size: 16px;
+    }
+
+    main h2 {
+        font-size: 23px;
+
+        margin-bottom: 32px;
+    }
+
+    .subject-menu {
+        gap: 16px;
+    }
+
+    .subject-menu button {
+        font-size: 17px;
+
+        padding: 15px 16px;
+    }
+
+    .formula-answer {
+        font-size: 15px;
+    }
+}
