@@ -1,0 +1,117 @@
+/* formulas.css */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #0d1117;
+    color: #ffffff;
+    min-height: 100vh;
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, #161b22, #21262d);
+    border-bottom: 2px solid #30363d;
+    padding: 25px 20px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+header h2 {
+    font-size: 32px;
+    color: #58a6ff;
+    letter-spacing: 1px;
+}
+
+/* Main */
+main {
+    width: 90%;
+    max-width: 900px;
+    margin: 35px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+/* Sections */
+section {
+    background: #161b22;
+    border: 1px solid #30363d;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    transition: 0.3s ease;
+}
+
+section:hover {
+    transform: translateY(-3px);
+    border-color: #58a6ff;
+    box-shadow: 0 10px 30px rgba(88, 166, 255, 0.15);
+}
+
+/* Section heading */
+section h3 {
+    color: #58a6ff;
+    font-size: 20px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #30363d;
+}
+
+/* Formula text */
+section p {
+    font-family: "Times New Roman", serif;
+    font-size: 25px;
+    line-height: 1.5;
+    color: #f0f6fc;
+    text-align: center;
+}
+
+/* PROVED */
+section p:last-child {
+    color: #3fb950;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+/* Subscript */
+sub {
+    font-size: 65%;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+
+    header {
+        padding: 20px 15px;
+    }
+
+    header h2 {
+        font-size: 27px;
+    }
+
+    main {
+        width: 94%;
+        margin: 25px auto;
+    }
+
+    section {
+        padding: 20px 15px;
+        border-radius: 12px;
+    }
+
+    section h3 {
+        font-size: 18px;
+    }
+
+    section p {
+        font-size: 21px;
+    }
+}
