@@ -41,58 +41,30 @@ header p {
 main {
     max-width: 700px;
     margin: auto;
-
     text-align: center;
 }
 
 main h2 {
     font-size: 28px;
-
     margin-bottom: 40px;
 }
 
 
 /* =========================
-   SUBJECT MENU
+   FORMULA BUTTONS
 ========================= */
 
-.subject-menu {
-    display: flex;
-    flex-direction: column;
-
-    gap: 16px;
-
-    width: 100%;
-}
-
-
-/* =========================
-   SUBJECT LINKS
-========================= */
-
-.subject-menu a {
+main button {
     display: block;
 
     width: 100%;
 
-    text-decoration: none;
-}
-
-
-/* =========================
-   SUBJECT BUTTONS
-========================= */
-
-.subject-menu button {
-    display: block;
-
-    width: 100%;
-
-    background-color: rgb(70, 70, 70);
+    background-color: rgb(45, 45, 45);
 
     color: white;
 
-    border: 1px solid rgb(120, 120, 120);
+    /* GREEN LINE */
+    border: 2px solid rgb(0, 200, 100);
 
     border-radius: 10px;
 
@@ -105,6 +77,8 @@ main h2 {
     cursor: pointer;
 
     box-sizing: border-box;
+
+    transition: 0.2s ease;
 }
 
 
@@ -112,8 +86,21 @@ main h2 {
    BUTTON HOVER
 ========================= */
 
-.subject-menu button:hover {
-    background-color: rgb(90, 90, 90);
+main button:hover {
+    background-color: rgb(60, 60, 60);
+
+    border-color: rgb(0, 255, 130);
+
+    box-shadow: 0 0 10px rgba(0, 255, 130, 0.35);
+}
+
+
+/* =========================
+   BUTTON ACTIVE
+========================= */
+
+main button:active {
+    transform: scale(0.98);
 }
 
 
@@ -122,174 +109,8 @@ main h2 {
 ========================= */
 
 button {
-    background-color: rgb(70, 70, 70);
-
     color: white;
-
-    border: 1px solid rgb(120, 120, 120);
-
-    border-radius: 10px;
-
-    padding: 14px 25px;
-
-    font-size: 17px;
-
     cursor: pointer;
-}
-
-button:hover {
-    background-color: rgb(90, 90, 90);
-}
-
-
-/* =========================
-   INPUTS
-========================= */
-
-input {
-    background-color: rgb(40, 40, 40);
-
-    color: white;
-
-    border: 1px solid rgb(120, 120, 120);
-
-    border-radius: 8px;
-
-    padding: 12px;
-
-    margin: 8px;
-
-    font-size: 16px;
-}
-
-
-/* =========================
-   LABELS
-========================= */
-
-label {
-    display: block;
-
-    margin-top: 12px;
-    margin-bottom: 5px;
-}
-
-
-/* =========================
-   FORMULA SYSTEM
-========================= */
-
-#topicList {
-    display: flex;
-
-    flex-direction: column;
-
-    gap: 10px;
-
-    width: 100%;
-}
-
-
-/* =========================
-   TOPIC BUTTONS
-========================= */
-
-.topic-button {
-    display: block;
-
-    width: 100%;
-
-    text-align: left;
-}
-
-
-/* =========================
-   FORMULA BUTTONS
-========================= */
-
-.formula-button {
-    display: block;
-
-    width: 100%;
-
-    text-align: left;
-}
-
-
-/* =========================
-   FORMULA ANSWER
-========================= */
-
-.formula-answer {
-    background-color: rgb(40, 40, 40);
-
-    border: 1px solid rgb(100, 100, 100);
-
-    border-radius: 10px;
-
-    padding: 20px;
-
-    margin-top: 15px;
-
-    min-height: 50px;
-
-    text-align: left;
-
-    white-space: pre-wrap;
-
-    overflow-x: auto;
-
-    line-height: 1.7;
-
-    font-size: 16px;
-
-    box-sizing: border-box;
-}
-
-
-/* =========================
-   ANSWER / HISTORY
-========================= */
-
-section {
-    margin-top: 25px;
-}
-
-#answer,
-#history {
-    background-color: rgb(40, 40, 40);
-
-    border: 1px solid rgb(100, 100, 100);
-
-    border-radius: 10px;
-
-    padding: 15px;
-
-    margin-top: 10px;
-
-    min-height: 25px;
-}
-
-
-/* =========================
-   LINKS
-========================= */
-
-a {
-    text-decoration: none;
-
-    color: inherit;
-}
-
-
-/* =========================
-   ERROR
-========================= */
-
-#errorMessage {
-    color: red;
-
-    margin: 10px 0;
 }
 
 
@@ -317,21 +138,11 @@ a {
 
     main h2 {
         font-size: 23px;
-
         margin-bottom: 32px;
     }
 
-    .subject-menu {
-        gap: 16px;
-    }
-
-    .subject-menu button {
+    main button {
         font-size: 17px;
-
         padding: 15px 16px;
-    }
-
-    .formula-answer {
-        font-size: 15px;
     }
 }
